@@ -1,6 +1,6 @@
 #!/bin/bash
 cores=$(nproc --all)
-modprobe crackswap num_devices=$cores
+modprobe zram num_devices=$cores
 
 swapoff -a
 
@@ -9,8 +9,8 @@ mem=$(( ($totalmem / $cores)* 1024 ))
 
 core=0
 while [ $core -lt $cores ]; do
-  echo $mem > /sys/block/crackswap$core/disksize
-  mkswap /dev/crackswap$core
-  swapon -p 5 /dev/crackswap$core
+  echo $mem > /sys/block/zram$core/disksize
+  mkswap /dev/zram$core
+  swapon -p 5 /dev/zram$core
   let core=core+1
 done
