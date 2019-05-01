@@ -2,9 +2,9 @@
 # Also known as zram...
 # This works with most debian and ubuntu releases which improperly assign swap values
 # Putting your /usr/bin down with the set :fire: {if ram=$# then + swap(*x)}
-# 100% more :fire: in your Ghz. 
+# 100% more :fire: in your Ghz.
 ##
-``` sudo wget -O /usr/bin/zram https://raw.githubusercontent.com/diveyez/crackswap/master/crackswap ```
+``` sudo wget -O /usr/bin/zram https://raw.githubusercontent.com/diveyez/crackswap/master/zram ```
 ##
 ``` sudo chmod +x /usr/bin/zram ```
 ##
