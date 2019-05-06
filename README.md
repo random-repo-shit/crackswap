@@ -13,6 +13,12 @@ add add line before exit 0 in /etc/rc.local
 ```
 /usr/bin/zram.sh &
 ```
-### Does not work with all systems
+
+## Launch first time
+```
+sudo /usr/bin/zram
+```
+
+### Does not work with all systems 
 ##
 ``` sudo sed -i '/exit 0/c\/usr/bin/zram &\nexit 0' /etc/rc.local ```
